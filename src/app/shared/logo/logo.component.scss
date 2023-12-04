@@ -1,0 +1,19 @@
+@import "../../scss/rem-calc.scss";
+@import "../../scss/variaveis.scss";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: rem-calc(40) 0;
+
+  span {
+    color: $white-color;
+    font-size: rem-calc(36);
+    font-style: italic;
+    font-weight: 900;
+
+    padding-left: rem-calc(5);
+  }
+}

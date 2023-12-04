@@ -1,8 +1,14 @@
-@use 'app/scss/variaveis.scss';
-@use 'app/scss/rem-calc.scss';
+@import "app/scss/variaveis.scss";
+@import "app/scss/rem-calc.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
-  background: var(--primary-color);
+  background: $primary-color;
 
   font-family: Roboto, sans-serif;
 }
@@ -10,5 +16,4 @@ html {
 main {
   max-width: rem-calc(600);
   margin: 0 auto;
-  box-sizing: border-box;
 }
