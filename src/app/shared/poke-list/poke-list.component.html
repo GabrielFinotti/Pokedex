@@ -1,5 +1,5 @@
 @for (pokemon of getAllPokemons; track $index) { @if (pokemon.status) {
-<a class="pokemon">
+<a [routerLink]="['details', pokemon.status.id]" class="pokemon">
   <section class="pokemon__status">
     <h2>{{ pokemon.name }}</h2>
     <ul>

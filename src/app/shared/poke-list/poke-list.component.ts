@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 // Services
 import { PokeApiService } from '../../services/poke-api.service';
@@ -6,7 +7,7 @@ import { PokeApiService } from '../../services/poke-api.service';
 @Component({
   selector: 'app-poke-list',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './poke-list.component.html',
   styleUrl: './poke-list.component.scss',
 })

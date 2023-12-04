@@ -13,6 +13,9 @@
     display: flex;
     position: relative;
 
+    color: $primary-color;
+    text-decoration: none;
+
     width: calc(49% - rem-calc(5));
     height: rem-calc(157);
     padding: rem-calc(20);
