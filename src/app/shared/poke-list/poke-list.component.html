@@ -1,36 +1,16 @@
+@for (pokemon of getAllPokemons; track $index) { @if (pokemon.status) {
 <a class="pokemon">
   <section class="pokemon__status">
-    <h2>Bulbasauro</h2>
+    <h2>{{ pokemon.name }}</h2>
     <ul>
-      <li>Grass</li>
-      <li>Poison</li>
+      <li></li>
     </ul>
   </section>
   <section class="pokemon__image">
-    <img src="../../../assets/image-1.png" alt="Bulbasauro" />
+    <img
+      [src]="pokemon.status.sprites.other.dream_world.front_default"
+      [alt]="pokemon.name"
+    />
   </section>
 </a>
-<a class="pokemon">
-  <section class="pokemon__status">
-    <h2>Bulbasauro</h2>
-    <ul>
-      <li>Grass</li>
-      <li>Poison</li>
-    </ul>
-  </section>
-  <section class="pokemon__image">
-    <img src="../../../assets/image-1.png" alt="Bulbasauro" />
-  </section>
-</a>
-<a class="pokemon">
-  <section class="pokemon__status">
-    <h2>Bulbasauro</h2>
-    <ul>
-      <li>Grass</li>
-      <li>Poison</li>
-    </ul>
-  </section>
-  <section class="pokemon__image">
-    <img src="../../../assets/image-1.png" alt="Bulbasauro" />
-  </section>
-</a>
+} }
