@@ -6,7 +6,7 @@ A Pokedex é um projeto desenvolvido em Angular que lista 100 Pokémons e permit
 
 ## Acesso Online
 
-Você pode acessar a versão online do projeto [aqui](URL_DO_SEU_DEPLOY).
+Você pode acessar a versão online do projeto [aqui](https://pokedex-training.netlify.app).
 
 ## Tecnologias Utilizadas
 
