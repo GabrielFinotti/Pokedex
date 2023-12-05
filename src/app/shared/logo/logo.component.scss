@@ -2,15 +2,13 @@
 @import "../../scss/variaveis.scss";
 
 header {
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    padding: rem-calc(40) 0;
-  }
+  padding: rem-calc(40) 0;
 
   h1 {
     color: $white-color;

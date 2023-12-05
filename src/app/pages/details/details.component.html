@@ -1,1 +1,29 @@
 <app-logo></app-logo>
+@if (isLoading) {
+<main>
+  <section class="pokemon__names">
+    <h1>{{ pokemon[0].name }}</h1>
+    <h2>{{ pokemon[1].names[0].name }}</h2>
+  </section>
+  <section class="pokemon__status">
+    <img
+      [src]="pokemon[0].sprites.other.dream_world.front_default"
+      [alt]="pokemon[0].name"
+    />
+    <article class="pokemon__status__statistics">
+      <section>
+        <h3>Estatísticas</h3>
+        <ol>
+          @for (value of pokemon[0].stats; track $index) {
+          <li>
+            <span>{{ value.stat.name }}</span>
+            <span>{{ value.base_stat }}</span>
+          </li>
+          }
+        </ol>
+      </section>
+      <a routerLink="/" class="btn btn__secondary"> Voltar </a>
+    </article>
+  </section>
+</main>
+}
