@@ -1,7 +1,7 @@
 @import "../../scss/variaveis.scss";
 @import "../../scss/rem-calc.scss";
 
-section {
+.listagem {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -41,6 +41,7 @@ section {
 
           font-size: rem-calc(10);
           text-indent: rem-calc(10);
+          text-transform: capitalize;
 
           margin-bottom: rem-calc(11);
         }

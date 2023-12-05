@@ -1,11 +1,13 @@
-<app-poke-search (emmitSearch)="getNamePoke()"></app-poke-search>
-<section>
+<app-poke-search (emmitSearch)="getNamePoke($event)"></app-poke-search>
+<section class="listagem">
   @for (pokemon of getAllPokemons; track $index) { @if (pokemon.status) {
   <a [routerLink]="['details', pokemon.status.id]" class="pokemon">
     <section class="pokemon__status">
       <h2>{{ pokemon.name }}</h2>
       <ul>
-        <li></li>
+        @for (value of pokemon.status.types; track $index) {
+        <li>{{ value.type.name }}</li>
+        }
       </ul>
     </section>
     <section class="pokemon__image">
